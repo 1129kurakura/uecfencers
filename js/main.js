@@ -97,8 +97,18 @@
     });
   };
 
+  // オープニングがある場合は、終わってからヒーローの演出を始める
+  const startHero = () => {
+    document.documentElement.classList.add('is-ready');
+    initCalls();
+  };
+
   initNav();
   initWeaponTabs();
   initReveal();
-  initCalls();
+  if (document.documentElement.classList.contains('intro')) {
+    document.addEventListener('intro:done', startHero, { once: true });
+  } else {
+    startHero();
+  }
 })();

@@ -20,9 +20,17 @@
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/sections.css">
+  <script src="js/intro-boot.js"></script>
+  <script src="js/intro.js" defer></script>
   <script src="js/main.js" defer></script>
 </head>
 <body>
+  <div class="intro-overlay" aria-hidden="true">
+    <div class="intro-bg"></div>
+    <canvas class="intro-canvas"></canvas>
+    <p class="intro-call" data-calls="En garde|Prêts ?|Allez !">En garde</p>
+  </div>
+
   <a class="skip-link" href="#main">本文へスキップ</a>
 
   <header class="site-header">

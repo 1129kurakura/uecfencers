@@ -49,6 +49,9 @@
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 
   --shadow-lift: 0 1px 0 var(--color-line), 0 18px 40px -24px oklch(18% 0.012 260 / 0.45);
+  --lamp-red-fill: linear-gradient(135deg, oklch(60% 0.25 15), oklch(72% 0.2 50));
+  --lamp-green-fill: linear-gradient(135deg, oklch(76% 0.2 165), oklch(86% 0.22 125));
+  --lamp-dot-size: 11px;
   --glow-red: 0 0 0 1px oklch(64% 0.24 27 / 0.5), 0 0 60px 4px oklch(64% 0.24 27 / 0.55);
   --glow-green: 0 0 0 1px oklch(80% 0.23 148 / 0.5), 0 0 60px 4px oklch(80% 0.23 148 / 0.45);
 }
