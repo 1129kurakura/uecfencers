@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>UEC Fencers Club｜電気通信大学 フェンシングクラブ</title>
+  <meta name="description" content="UEC Fencers Club は電気通信大学のフェンシングクラブです。国公立大会などへの出場と、ルールを知らない人でも楽しめるフェンシングづくりの両方に取り組んでいます。">
+  <meta property="og:title" content="UEC Fencers Club｜電気通信大学 フェンシングクラブ">
+  <meta property="og:description" content="競う人も、つくる人も。大会への挑戦と、フェンシングの普及に取り組む電気通信大学のクラブです。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/logo.png">
+  <meta name="theme-color" content="#101216">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,700;1,700&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="UEC Fencers Club トップへ">
+      <img class="brand-mark" src="img/favicon.png" width="36" height="36" alt="">
+      <span class="brand-name">UEC Fencers Club</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+      <span class="visually-hidden">メニュー</span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="メインナビゲーション">
+      <ul>
+        <li><a href="#about">クラブについて</a></li>
+        <li><a href="#activity">活動</a></li>
+        <li><a href="#fencing">3種目</a></li>
+        <li><a href="#record">あゆみ</a></li>
+        <li><a href="#member">メンバー</a></li>
+        <li><a class="nav-cta" href="#join">参加する</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section id="top" class="hero" aria-labelledby="hero-heading">
+      <div class="hero-inner">
+        <p class="hero-eyebrow">
+          <span>電気通信大学 フェンシングクラブ</span>
+          <span class="hero-est">EST. 2026</span>
+        </p>
+        <h1 id="hero-heading" class="hero-title">
+          <span class="hero-title-line">UEC</span>
+          <span class="hero-title-line">Fencers</span>
+          <span class="hero-title-line hero-title-line--out">Club</span>
+        </h1>
+        <p class="hero-copy">電通大に、<wbr>フェンシングを。</p>
+        <p class="hero-lead">
+          大会でポイントを取りにいく人も、演出や解説の仕組みをつくる人も。<br class="br-wide">
+          競うことと広めること、その両方に取り組むクラブです。
+        </p>
+        <div class="hero-actions">
+          <a class="button button--light" href="#activity">活動を見る</a>
+          <a class="button button--ghost" href="#join">参加・見学について</a>
+        </div>
+      </div>
+
+      <div class="apparatus" aria-hidden="true">
+        <div class="apparatus-lamp apparatus-lamp--red">
+          <span class="apparatus-lamp-label">競う</span>
+          <span class="apparatus-lamp-sub">PLAYER</span>
+        </div>
+        <div class="apparatus-center">
+          <span class="apparatus-call" data-calls="En garde|Prêts ?|Allez !">Allez !</span>
+          <span class="apparatus-time">3:00</span>
+        </div>
+        <div class="apparatus-lamp apparatus-lamp--green">
+          <span class="apparatus-lamp-label">広める</span>
+          <span class="apparatus-lamp-sub">PROJECT</span>
+        </div>
+      </div>
+
+      <svg class="piste" viewBox="0 0 1400 60" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <line x1="0" y1="30" x2="1400" y2="30"/>
+        <line x1="700" y1="6" x2="700" y2="54"/>
+        <line x1="500" y1="14" x2="500" y2="46"/>
+        <line x1="900" y1="14" x2="900" y2="46"/>
+        <line x1="200" y1="20" x2="200" y2="40"/>
+        <line x1="1200" y1="20" x2="1200" y2="40"/>
+      </svg>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section about" aria-labelledby="about-heading">
+      <div class="section-head">
+        <p class="section-no">01 <span>About</span></p>
+        <h2 id="about-heading">続けたい人が、<br>続けられる場所を。</h2>
+      </div>
+      <div class="about-body">
+        <div class="about-text reveal">
+          <p>
+            電気通信大学には、フェンシング部もフェンシングサークルもありませんでした。高校まで剣を握ってきた学生が、入学と同時に競技をやめるしかない。UEC Fencers Club は、その状況を変えるために 2026 年 8 月に結成した学生団体です。
+          </p>
+          <p>
+            もうひとつの出発点は、フェンシングが「ルールが分かりにくい」という理由で敬遠されがちな競技だということです。私たちは経験者だけの場にせず、未経験の人やルールを知らない人も気軽に関われる活動を大事にしています。
+          </p>
+          <p class="about-note">※ 電気通信大学の非公認団体です。</p>
+        </div>
+        <figure class="about-emblem reveal">
+          <picture>
+            <source srcset="img/logo.webp" type="image/webp">
+            <img src="img/logo.png" width="640" height="640" loading="lazy" alt="UEC Fencers Club のロゴ">
+          </picture>
+        </figure>
+        <dl class="about-facts reveal">
+          <div>
+            <dt>結成</dt>
+            <dd><span class="num">2026.08</span></dd>
+          </div>
+          <div>
+            <dt>メンバー</dt>
+            <dd><span class="num">7</span><span class="unit">名</span></dd>
+          </div>
+          <div>
+            <dt>活動の柱</dt>
+            <dd><span class="num">2</span><span class="unit">本</span></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ ACTIVITY ============ -->
+    <section id="activity" class="section activity" aria-labelledby="activity-heading">
+      <div class="section-head">
+        <p class="section-no">02 <span>Activity</span></p>
+        <h2 id="activity-heading">ランプは、ふたつ点く。</h2>
+        <p class="section-lead">
+          フェンシングの審判機には赤と緑、ふたつのランプがあります。このクラブの活動も同じく二本立てです。どちらか片方だけでも、両方でも参加できます。
+        </p>
+      </div>
+
+      <div class="lanes">
+        <article class="lane lane--red reveal" aria-labelledby="lane-player">
+          <header class="lane-head">
+            <span class="lane-lamp" aria-hidden="true"></span>
+            <p class="lane-tag">PLAYER</p>
+            <h3 id="lane-player">競う<small>大会への参加</small></h3>
+          </header>
+          <p class="lane-text">
+            Player メンバーは選手として大会に出場します。学内に練習場所がまだないため、他大学や高校のフェンシング部、フェンシングスクールの練習に参加しながら力をつけています。
+          </p>
+          <ul class="tournaments">
+            <li>
+              <span class="tournament-name">全日本国公立大学フェンシング大会</span>
+              <span class="chip chip--solid">出場</span>
+            </li>
+            <li>
+              <span class="tournament-name">関東国公立フェンシング大会<small>春季・秋季</small></span>
+              <span class="chip chip--solid">出場</span>
+            </li>
+            <li>
+              <span class="tournament-name">関東学生フェンシング選手権大会<small>関カレ</small></span>
+              <span class="chip">挑戦</span>
+            </li>
+            <li>
+              <span class="tournament-name">全日本学生フェンシング選手権大会<small>インカレ</small></span>
+              <span class="chip">挑戦</span>
+            </li>
+          </ul>
+          <p class="lane-foot">国公立大学の大会には、出場要件により「電気通信大学」として出場しています。</p>
+        </article>
+
+        <article class="lane lane--green reveal" aria-labelledby="lane-project">
+          <header class="lane-head">
+            <span class="lane-lamp" aria-hidden="true"></span>
+            <p class="lane-tag">PROJECT</p>
+            <h3 id="lane-project">広める<small>フェンシングの普及</small></h3>
+          </header>
+          <p class="lane-text">
+            剣を持たないメンバーにも役割があります。初めて見る人が「いま何が起きたのか」を分かるようにする。電通大らしく、技術でフェンシングの間口を広げる活動です。
+          </p>
+          <ol class="projects">
+            <li>
+              <h4>ビギナー向けスポーツの開発</h4>
+              <p>防具や剣がなくても、フェンシングの駆け引きを体験できる入門スポーツを考えています。</p>
+            </li>
+            <li>
+              <h4>伝わる試合をつくるシステム</h4>
+              <p>映像・光・音響による演出と、ルールや審判の判定をその場で解説する仕組みを開発します。</p>
+            </li>
+            <li>
+              <h4>イベントの企画・運営</h4>
+              <p>開発したものを実際に導入し、ルールを知らない人でも楽しめるイベントを開きます。</p>
+            </li>
+          </ol>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ FENCING 101 ============ -->
+    <section id="fencing" class="section fencing" aria-labelledby="fencing-heading">
+      <div class="section-head">
+        <p class="section-no">03 <span>Fencing 101</span></p>
+        <h2 id="fencing-heading">30秒でわかる、3種目。</h2>
+        <p class="section-lead">フェンシングには種目が3つあり、「どこを」「どう」攻撃すれば得点になるかが違います。種目を選ぶと有効面が光ります。</p>
+      </div>
+
+      <div class="weapons reveal" data-weapon="foil">
+        <div class="weapon-tabs" role="tablist" aria-label="種目">
+          <button type="button" role="tab" id="tab-foil" aria-controls="panel-foil" aria-selected="true" data-weapon="foil">
+            <span class="weapon-tab-en">Foil</span>フルーレ
+          </button>
+          <button type="button" role="tab" id="tab-epee" aria-controls="panel-epee" aria-selected="false" tabindex="-1" data-weapon="epee">
+            <span class="weapon-tab-en">Épée</span>エペ
+          </button>
+          <button type="button" role="tab" id="tab-sabre" aria-controls="panel-sabre" aria-selected="false" tabindex="-1" data-weapon="sabre">
+            <span class="weapon-tab-en">Sabre</span>サーブル
+          </button>
+        </div>
+
+        <figure class="target">
+          <svg viewBox="0 0 200 350" role="img" aria-labelledby="target-title" focusable="false">
+            <title id="target-title">選択中の種目の有効面を示した人体図</title>
+            <g class="part part--head"><circle cx="100" cy="40" r="25"/><path d="M84 66h32l4 12H80z"/></g>
+            <path class="part part--torso" d="M70 82h60l-4 76H74z"/>
+            <path class="part part--trunk" d="M74 162h52l-4 28-22 14-22-14z"/>
+            <g class="part part--arm"><path d="M66 83 50 89 32 170l14 4z"/><path d="M134 83l16 6 18 81-14 4z"/></g>
+            <g class="part part--hand"><circle cx="38" cy="185" r="9"/><circle cx="162" cy="185" r="9"/></g>
+            <g class="part part--leg"><path d="M76 196l22 14-6 122H72z"/><path d="M124 196l-22 14 6 122h20z"/></g>
+            <g class="part part--foot"><rect x="60" y="336" width="34" height="11" rx="3"/><rect x="106" y="336" width="34" height="11" rx="3"/></g>
+          </svg>
+          <figcaption><span class="target-key" aria-hidden="true"></span>有効面</figcaption>
+        </figure>
+
+        <div class="weapon-panels">
+          <div role="tabpanel" id="panel-foil" aria-labelledby="tab-foil" tabindex="0">
+            <h3>フルーレ<span>基本が詰まった種目</span></h3>
+            <dl class="weapon-spec">
+              <div><dt>有効面</dt><dd>胴体のみ（背中を含む）</dd></div>
+              <div><dt>攻撃</dt><dd>突きだけ</dd></div>
+              <div><dt>攻撃権</dt><dd>あり</dd></div>
+            </dl>
+            <p>先に攻撃を始めた側に「攻撃権」があり、相手は剣を払うなどして権利を奪ってから反撃します。同時に突いたときは、権利を持っていた側の得点です。</p>
+          </div>
+          <div role="tabpanel" id="panel-epee" aria-labelledby="tab-epee" tabindex="0" hidden>
+            <h3>エペ<span>いちばん分かりやすい種目</span></h3>
+            <dl class="weapon-spec">
+              <div><dt>有効面</dt><dd>全身（つま先からマスクまで）</dd></div>
+              <div><dt>攻撃</dt><dd>突きだけ</dd></div>
+              <div><dt>攻撃権</dt><dd>なし</dd></div>
+            </dl>
+            <p>とにかく先に突いたほうの得点。ほぼ同時に突けば両者に 1 点ずつ入ります。ルールが単純なぶん、間合いと我慢の勝負になります。</p>
+          </div>
+          <div role="tabpanel" id="panel-sabre" aria-labelledby="tab-sabre" tabindex="0" hidden>
+            <h3>サーブル<span>いちばん速い種目</span></h3>
+            <dl class="weapon-spec">
+              <div><dt>有効面</dt><dd>上半身（頭と腕を含む）</dd></div>
+              <div><dt>攻撃</dt><dd>突きと斬り</dd></div>
+              <div><dt>攻撃権</dt><dd>あり</dd></div>
+            </dl>
+            <p>3種目で唯一「斬り」が認められています。開始の合図から数秒で決着がつくことも多く、スピードと思い切りが勝負を分けます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RECORD ============ -->
+    <section id="record" class="section record" aria-labelledby="record-heading">
+      <div class="section-head">
+        <p class="section-no">04 <span>Record</span></p>
+        <h2 id="record-heading">これまでのあゆみ</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="reveal">
+          <time datetime="2026-07">2026.07</time>
+          <div>
+            <p class="timeline-title">東京外国語大学フェンシング部との合同練習</p>
+          </div>
+        </li>
+        <li class="reveal timeline--result">
+          <time datetime="2026-07">2026.07</time>
+          <div>
+            <p class="timeline-title">春の関東国公立大学フェンシング大会に出場</p>
+            <p class="result"><span class="result-event">エペ男子個人</span><span class="result-rank">Best 32</span></p>
+          </div>
+        </li>
+        <li class="reveal timeline--mark">
+          <time datetime="2026-08">2026.08</time>
+          <div>
+            <p class="timeline-title">UEC Fencers Club 結成</p>
+            <p class="timeline-note">創設メンバー 3 名でスタート</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <time datetime="2026-08">2026.08</time>
+          <div>
+            <p class="timeline-title">令和8年度 全国高等学校総合体育大会（インターハイ）フェンシング競技</p>
+            <p class="timeline-note">競技役員として派遣され、大会運営に協力</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <time datetime="2026-08">2026.08</time>
+          <div>
+            <p class="timeline-title">東京外国語大学フェンシング部との合同練習</p>
+          </div>
+        </li>
+        <li class="reveal timeline--result">
+          <time datetime="2026-08">2026.08</time>
+          <div>
+            <p class="timeline-title">全日本国公立大学フェンシング大会に出場</p>
+            <p class="result"><span class="result-event">フルーレ男子団体</span><span class="result-rank">Best 32</span></p>
+          </div>
+        </li>
+        <li class="reveal">
+          <time datetime="2026-09">2026.09</time>
+          <div>
+            <p class="timeline-title">東亜学園高等学校フェンシング部の練習に参加</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <time datetime="2026-10">2026.10</time>
+          <div>
+            <p class="timeline-title">フェンシングスクール MNH の練習会に参加</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="next reveal" aria-labelledby="next-heading">
+        <h3 id="next-heading"><span class="next-label">Next</span>これからの予定</h3>
+        <ul>
+          <li><strong>秋の関東国公立大学フェンシング大会</strong>エペ男子団体・フルーレ男子個人で出場予定</li>
+          <li><strong>定期練習</strong>週 1〜2 回の練習と、他団体との合同練習を継続</li>
+          <li><strong>体験会</strong>未経験者向けに学期ごとに開催</li>
+          <li><strong>新歓・調布祭</strong>2027 年度の新入生歓迎行事と調布祭への参加を目指す</li>
+          <li><strong>地域イベント</strong>ルールを知らない人でも楽しめるエキシビションマッチなどを企画</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ MEMBER ============ -->
+    <section id="member" class="section member" aria-labelledby="member-heading">
+      <div class="section-head">
+        <p class="section-no">05 <span>Member</span></p>
+        <h2 id="member-heading">メンバー</h2>
+        <p class="section-lead">情報理工学域の 1 年生から 4 年生まで、7 名で活動しています。</p>
+      </div>
+
+      <ul class="roster">
+        <li class="roster-lead reveal">
+          <p class="roster-role">代表（運営）</p>
+          <p class="roster-name">志賀 蔵之介</p>
+          <p class="roster-meta">Ⅱ類 1年</p>
+        </li>
+        <li class="reveal">
+          <p class="roster-role">主将（競技）</p>
+          <p class="roster-name">T.H.</p>
+          <p class="roster-meta">Ⅲ類 2年</p>
+        </li>
+        <li class="reveal">
+          <p class="roster-role">副将 兼 会計</p>
+          <p class="roster-name">S.Y.</p>
+          <p class="roster-meta">Ⅰ類 1年</p>
+        </li>
+        <li class="reveal">
+          <p class="roster-role">マネージャー</p>
+          <p class="roster-name">A.F.</p>
+          <p class="roster-meta">Ⅱ類 4年</p>
+        </li>
+        <li class="reveal">
+          <p class="roster-role">メンバー</p>
+          <p class="roster-name">Y.A.</p>
+          <p class="roster-meta">Ⅱ類 1年</p>
+        </li>
+        <li class="reveal">
+          <p class="roster-role">メンバー</p>
+          <p class="roster-name">S.S.</p>
+          <p class="roster-meta">Ⅱ類 1年</p>
+        </li>
+        <li class="reveal">
+          <p class="roster-role">メンバー</p>
+          <p class="roster-name">T.T.</p>
+          <p class="roster-meta">Ⅱ類 1年</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ JOIN ============ -->
+    <section id="join" class="join" aria-labelledby="join-heading">
+      <div class="join-inner">
+        <p class="section-no section-no--dark">06 <span>Join</span></p>
+        <h2 id="join-heading">剣を持つ人も、<br>持たない人も。</h2>
+        <ul class="join-list">
+          <li>
+            <h3>経験者の方へ</h3>
+            <p>大学でも続けたい人を待っています。種目は問いません。</p>
+          </li>
+          <li>
+            <h3>未経験の方へ</h3>
+            <p>ルールを知らなくて大丈夫です。体験会から気軽にどうぞ。</p>
+          </li>
+          <li>
+            <h3>つくりたい方へ</h3>
+            <p>映像、音響、電子工作、プログラミング、イベント運営。得意なことを活かせます。</p>
+          </li>
+        </ul>
+        <!-- TODO: 連絡先（メール / X / Instagram など）が決まったら、下の段落をリンクに差し替える -->
+        <p class="join-contact">連絡先は現在準備中です。学内でメンバーを見かけたら、気軽に声をかけてください。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-name">UEC Fencers Club</p>
+    <p>電気通信大学 フェンシングクラブ（非公認団体）</p>
+    <p><small>&copy; 2026 UEC Fencers Club</small></p>
+  </footer>
+</body>
+</html>
