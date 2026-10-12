@@ -304,6 +304,30 @@
   }
 }
 
+/* ============ DOTS ============ */
+/* 色面をドットで抜き、--dots-fade の向きに消していく飾り */
+.lane::before,
+.next::before,
+.join::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--dots-fill);
+  mask-image:
+    radial-gradient(circle, #000 0 36%, transparent 44%),
+    var(--dots-fade);
+  mask-size: var(--lamp-dot-size) var(--lamp-dot-size), 100% 100%;
+  mask-composite: intersect;
+  -webkit-mask-composite: source-in;
+  pointer-events: none;
+}
+
+/* 区切りの罫線もドットの列にする */
+.about-facts,
+.timeline {
+  background: radial-gradient(circle, var(--color-ink) 0 30%, transparent 38%) 0 0 / var(--lamp-dot-size) var(--lamp-dot-size) repeat-x;
+}
+
 /* ============ ABOUT ============ */
 .about-body {
   display: grid;
@@ -335,7 +359,7 @@
 .about-facts {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-top: 2px solid var(--color-ink);
+  padding-top: var(--lamp-dot-size);
 }
 
 .about-facts > div {
@@ -396,14 +420,18 @@
   --lane-ink: var(--color-red-ink);
   --lane-lamp: var(--color-lamp-red);
   --lane-wash: var(--color-red-wash);
+  --dots-fill: var(--lamp-red-fill);
+  --dots-fade: linear-gradient(to bottom, #000 10%, transparent);
   position: relative;
+  isolation: isolate;
+  overflow: hidden;
   display: grid;
   align-content: start;
   gap: var(--space-md);
   padding: clamp(1.5rem, 1rem + 2.5vw, 3rem);
+  padding-top: calc(clamp(1.5rem, 1rem + 2.5vw, 3rem) + var(--space-lg));
   background: var(--color-white);
-  border-top: 8px solid var(--lane-lamp);
-  border-radius: var(--radius-sm) var(--radius-sm) var(--radius-lg) var(--radius-lg);
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lift);
 }
 
@@ -411,6 +439,12 @@
   --lane-ink: var(--color-green-ink);
   --lane-lamp: var(--color-lamp-green);
   --lane-wash: var(--color-green-wash);
+  --dots-fill: var(--lamp-green-fill);
+}
+
+.lane::before {
+  inset: 0 0 auto;
+  height: calc(var(--lamp-dot-size) * 6);
 }
 
 .lane-head {
@@ -694,7 +728,7 @@
 
 /* ============ RECORD ============ */
 .timeline {
-  border-top: 2px solid var(--color-ink);
+  padding-top: var(--lamp-dot-size);
 }
 
 .timeline > li {
@@ -767,9 +801,18 @@
 .next {
   margin-top: var(--space-xl);
   padding: clamp(1.5rem, 1rem + 2.5vw, 3rem);
+  --dots-fill: var(--lamp-green-fill);
+  --dots-fade: radial-gradient(circle at 100% 0, #000, transparent 75%);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   background: var(--color-green-wash);
-  border-left: 8px solid var(--color-lamp-green);
-  border-radius: var(--radius-sm) var(--radius-lg) var(--radius-lg) var(--radius-sm);
+  border-radius: var(--radius-lg);
+}
+
+.next::before {
+  inset: 0;
+  opacity: 0.7;
 }
 
 .next h3 {
@@ -890,10 +933,18 @@
 /* ============ JOIN ============ */
 .join {
   padding: var(--space-section) var(--gutter);
-  background:
-    linear-gradient(90deg, var(--color-lamp-red) 0 50%, var(--color-lamp-green) 50% 100%) top / 100% 8px no-repeat,
-    var(--color-ink);
+  --dots-fill: linear-gradient(90deg, oklch(60% 0.25 15), oklch(72% 0.2 50) 50%, oklch(76% 0.2 165) 50%, oklch(86% 0.22 125));
+  --dots-fade: linear-gradient(to bottom, #000, transparent);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--color-ink);
   color: var(--color-white);
+}
+
+.join::before {
+  inset: 0 0 auto;
+  height: calc(var(--lamp-dot-size) * 8);
 }
 
 .join-inner {
